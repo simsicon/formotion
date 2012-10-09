@@ -44,7 +44,7 @@ module Formotion
       def picker
         @picker ||= begin
           picker = UIDatePicker.alloc.initWithFrame(CGRectZero)
-          picker.datePickerMode = UIDatePickerModeDate
+          picker.datePickerMode = self.row.picker_mode || UIDatePickerModeDate
           picker.hidden = false
           picker.date = self.date_value || NSDate.date
 
