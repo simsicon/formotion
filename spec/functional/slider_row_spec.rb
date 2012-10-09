@@ -21,7 +21,7 @@ describe "FormController/SliderRow" do
 
   it "should change row value when sliding" do
     @form.sections[0].rows[0].value.should == 1
-    drag("Slider Slider", :from => :left)
+    drag("Slider Slider", :from => :left, :to => :right, :duration => 1)
     @form.sections[0].rows[0].value.should == 100
   end
 end
