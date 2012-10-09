@@ -16,6 +16,10 @@ module Formotion
       # Stores possible formatting information (used by date pickers, etc)
       #   if :type == :date, accepts values in [:short, :medium, :long, :full]
       :format,
+      # Stores possible date pickers mode
+      # Available modes [UIDatePickerModeTime, UIDatePickerModeDate, UIDatePickerModeDateAndTime, UIDatePickerModeCountDownTimer]
+      # http://developer.apple.com/library/ios/#documentation/uikit/reference/UIDatePicker_Class/Reference/UIDatePicker.html
+      :picker_mode,
       # alternative title for row (only used in EditRow for now)
       :alt_title,
 
